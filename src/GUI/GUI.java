@@ -1,3 +1,4 @@
+package GUI;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -12,7 +13,6 @@ import javax.swing.JButton;
 
 public class GUI implements ActionListener{
 
-    private static JLabel namelabel;
     private static JTextField nameText;
     private static JLabel numLabel;
     private static JPasswordField numText;
@@ -30,7 +30,7 @@ public class GUI implements ActionListener{
 
         panel.setLayout(null);
 
-        namelabel = new JLabel("Name");
+        JLabel namelabel = new JLabel("Name");
         namelabel.setBounds(10,20,80,25);
         panel.add(namelabel);
 
@@ -78,3 +78,4 @@ public class GUI implements ActionListener{
 
 
 }
+
